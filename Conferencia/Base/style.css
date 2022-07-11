@@ -1,0 +1,35 @@
+:root {
+    --footer: #1e5170;
+    --enviar:#95d03e;
+    --lima: #8BE73A;
+}
+
+#footer {
+ background-color: var(--footer) !important;
+}
+
+form button#enviar {
+    background-color: var(--enviar) !important;
+    border: none;
+    border-radius: .25rem;
+    color: aliceblue;
+    height: 45px; 
+}
+form button#enviar:hover{
+    background-color: var(--footer) !important;
+    color: var(--lima) !important;
+}
+
+#supertxt {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 10%;
+   margin: auto;
+   z-index: 9999999;
+}
+
+#orador :hover{
+    color: black !important;
+}
+
