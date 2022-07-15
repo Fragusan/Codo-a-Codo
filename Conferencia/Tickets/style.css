@@ -32,3 +32,7 @@ form button#enviar:hover{
 #orador :hover{
     color: black !important;
 }
+
+.navbar-nav :hover{
+    color: rgb(0, 0, 0) !important;
+}
