@@ -1,11 +1,12 @@
 :root {
-    --footer: #1e5170;
+    --footer1: #1e5170;
+    --footer2: #1b3846;
     --enviar:#95d03e;
     --lima: #8BE73A;
 }
 
 #footer {
- background-color: var(--footer) !important;
+    background-image: linear-gradient(to right,var(--footer2), var(--footer1)) !important;
 }
 
 form button#enviar {
@@ -16,7 +17,7 @@ form button#enviar {
     height: 45px; 
 }
 form button#enviar:hover{
-    background-color: var(--footer) !important;
+    background-color: var(--footer1) !important;
     color: var(--lima) !important;
 }
 

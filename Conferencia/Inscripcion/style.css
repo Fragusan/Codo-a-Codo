@@ -37,3 +37,20 @@ form button#enviar:hover{
 .navbar-nav :hover{
     color: rgb(0, 0, 0) !important;
 }
+
+.offcanvas-end {
+   width: 70% !important;
+   height: 120% !important;
+}
+
+.reg:hover{
+    color: aliceblue !important;
+}
+
+.mff{
+    margin-bottom: 0.9rem!important;
+}
+
+.me-9{
+    margin-right: 12rem!important;
+}
