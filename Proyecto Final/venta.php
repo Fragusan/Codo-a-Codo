@@ -62,21 +62,21 @@ form button#enviar:hover{
 
     <section id="descuentos" class="row d-flex justify-content-center mt-4">
 
-      <div class="col-3 text-center border border-primary me-2">
+      <div class="col-3 text-center border border-3 border-primary me-2">
         <h5 class="card-title mt-2">Estudiante</h5>
         <p class="card-text ">Tienen un descuento </p>
         <p class="card-text fw-bold">80%</p>
         <p class="card-text fw-lighter text-secondary mb-0"><small>*sujeto a presentación de documentación</small></p>
       </div>
 
-      <div class="col-3 text-center border border-success">
+      <div class="col-3 text-center border border-3 border-success">
         <h5 class="card-title mt-2">Trainee</h5>
         <p class="card-text ">Tienen un descuento </p>
         <p class="card-text fw-bold">50%</p>
         <p class="card-text fw-lighter text-secondary mb-0"><small>*sujeto a presentación de documentación</small></p>
       </div>
 
-      <div class="col-3 text-center border border-warning ms-2">
+      <div class="col-3 text-center border border-3 border-warning ms-2">
         <h5 class="card-title mt-2">Junior</h5>
         <p class="card-text ">Tienen un descuento </p>
         <p class="card-text fw-bold">15%</p>
@@ -136,7 +136,7 @@ form button#enviar:hover{
           </div>
 
           <div style="display: none">
-              <input type="text"  id="plata" value="">
+              <input type="text"  id="plata" name="plata" value="">
         </div>
 
 
@@ -152,7 +152,7 @@ form button#enviar:hover{
         <div class="row d-flex justify-content-center">
 
           <button id="enviar" type="reset" class="btn col-lg-4 mt-3 border border-white" onclick="cleaner()">Borrar</button>
-          <button id="enviar" type="submit" value="submit" class="btn col-lg-4 mt-3 border border-white">Comprar</button>
+          <button id="enviar" type="submit" value="submit" class="btn col-lg-4 mt-3 border border-white" onclick="setPay()">Comprar</button>
         
         </div>
 
@@ -175,6 +175,11 @@ form button#enviar:hover{
     cantidad : 0,
     ahorro: 0,
     cDescuento: ""
+}
+
+const setPay= ()=>{
+  document.getElementById("plata");
+  plata.value= variables.cDescuento
 }
 
 const provisorio=()=>{
