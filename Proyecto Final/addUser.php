@@ -29,7 +29,5 @@ if ($insert) {
     include "script.php";
 }
 include "footer.php";
-
-header('Refresh: 3; url=panelClient.php');
-
+include "redPanelClient.php";
 ?> 
